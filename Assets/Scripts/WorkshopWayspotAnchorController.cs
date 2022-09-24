@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using Niantic.ARDK.AR;
@@ -14,13 +15,15 @@ using UnityEngine.UI;
 public class WorkshopWayspotAnchorController : MonoBehaviour
 {
     public Camera _camera; // the ARDK's AR camera instead of the default Unity camera
-    public GameObject _objectPrefab; // the prefab we will be spawning on screen
+    public List<GameObject> _objectPrefabs; // the prefab we will be spawning on screen
     public Text _statusLog; // updates the status log for Wayspot Anchors on screen
     public Text _localizationStatus; // updates the localization status message on screen
 
     string LocalSaveKey = "my_wayspots"; // key used to store anchors locally
     IARSession _arSession; // the AR session started by ARDK
     WayspotAnchorService _wayspotAnchorService; // controls VPS features used
+
+    int prefabCounter;
 
     void OnEnable()
     {
@@ -63,8 +66,12 @@ public class WorkshopWayspotAnchorController : MonoBehaviour
 
     void CreateWayspotAnchorGameObject(IWayspotAnchor anchor, Vector3 position, Quaternion rotation)
     {
-        var go = Instantiate(_objectPrefab, position, rotation);
+        if (prefabCounter >= _objectPrefabs.Count)
+            return;
         
+        var go = Instantiate(_objectPrefabs[prefabCounter], position, rotation);
+        prefabCounter++;
+
         var tracker = go.GetComponent<WayspotAnchorTracker>();
         if (tracker == null)
         {
@@ -101,12 +108,14 @@ public class WorkshopWayspotAnchorController : MonoBehaviour
     {
         var currentFrame = _arSession.CurrentFrame;
         if (currentFrame == null) return;
+        if (prefabCounter >= _objectPrefabs.Count) return;
+        
         var hitTestResults = currentFrame.HitTest(_camera.pixelWidth, _camera.pixelHeight, touch.position,
             ARHitTestResultType.EstimatedHorizontalPlane);
         if (hitTestResults.Count <= 0) return;
         var position = hitTestResults[0].WorldTransform.ToPosition();
         var rotation = Quaternion.Euler(new Vector3(0, UnityEngine.Random.Range(0, 360)));
-        Matrix4x4 poseData = Matrix4x4.TRS(position, rotation, _objectPrefab.transform.localScale);
+        Matrix4x4 poseData = Matrix4x4.TRS(position, rotation, _objectPrefabs[prefabCounter].transform.localScale);
         PlaceAnchor(poseData);
     }
 
