@@ -6,7 +6,7 @@ using Random = UnityEngine.Random;
 
 [RequireComponent(typeof(AudioSource))]
 [RequireComponent(typeof(MeshRenderer))]
-public class MagicRock : MonoBehaviour
+public class MagicRock : MonoBehaviour, IPlayable
 {
     enum State { Idle, Oscillating, Playing }
 

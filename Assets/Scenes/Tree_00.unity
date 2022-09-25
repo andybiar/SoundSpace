@@ -1124,10 +1124,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _camera: {fileID: 1546051498}
   _objectPrefabs:
-  - {fileID: 3132407067065940454, guid: 5c9ef73411f9af540b3cd5102b4bcb7b, type: 3}
+  - {fileID: 5407196007125591790, guid: f6c03668ad321491b91c133aaa3b461f, type: 3}
   - {fileID: 4317510483242936991, guid: 1f21207fcbc95f14e93cf11027f301d7, type: 3}
   - {fileID: 7758385160906372444, guid: f5c666a77c77c4278bb73e6d905ed6a8, type: 3}
   - {fileID: 5899727463855718888, guid: 63675404723bc48178c4e4f8a2bb27fc, type: 3}
+  - {fileID: 3132407067065940454, guid: 5c9ef73411f9af540b3cd5102b4bcb7b, type: 3}
   _statusLog: {fileID: 244473055}
   _localizationStatus: {fileID: 912245645}
 --- !u!4 &1818023970

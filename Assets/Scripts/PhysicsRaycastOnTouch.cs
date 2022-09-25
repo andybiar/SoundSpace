@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using Niantic.ARDK.Utilities.Input.Legacy;
 using UnityEngine;
 
@@ -30,10 +31,10 @@ public class PhysicsRaycastOnTouch : MonoBehaviour
         if (Physics.Raycast(ray, out RaycastHit hitInfo))
         {
             var g = hitInfo.collider.gameObject;
-            var rock = g.GetComponent<MagicRock>();
-            if (rock is null) return;
+            var playable = g.GetComponents<IPlayable>()?.First();
+            if (playable is null) return;
 
-            rock.Play();
+            playable.Play();
         }
     }
 }
