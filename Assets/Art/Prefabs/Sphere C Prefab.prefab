@@ -87,6 +87,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SoundSphere_C
       objectReference: {fileID: 0}
+    - target: {fileID: 8966176782071654495, guid: 63675404723bc48178c4e4f8a2bb27fc, type: 3}
+      propertyPath: MaxDistance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8966176782071654495, guid: 63675404723bc48178c4e4f8a2bb27fc, type: 3}
+      propertyPath: MinDistance
+      value: 0.08
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 63675404723bc48178c4e4f8a2bb27fc, type: 3}
 --- !u!4 &8891186696583510017 stripped

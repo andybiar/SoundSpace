@@ -39,6 +39,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3512162764249716559}
     m_Modifications:
+    - target: {fileID: 127582006545312699, guid: f6c03668ad321491b91c133aaa3b461f, type: 3}
+      propertyPath: MinDistance
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 127582007310350909, guid: f6c03668ad321491b91c133aaa3b461f, type: 3}
+      propertyPath: MinDistance
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 127582007432305855, guid: f6c03668ad321491b91c133aaa3b461f, type: 3}
+      propertyPath: MaxDistance
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 127582007432305855, guid: f6c03668ad321491b91c133aaa3b461f, type: 3}
+      propertyPath: MinDistance
+      value: 0.25
+      objectReference: {fileID: 0}
     - target: {fileID: 4630237743804447828, guid: f6c03668ad321491b91c133aaa3b461f, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -98,6 +114,14 @@ PrefabInstance:
     - target: {fileID: 5407196007125591790, guid: f6c03668ad321491b91c133aaa3b461f, type: 3}
       propertyPath: m_Name
       value: Harp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5680730668950514928, guid: f6c03668ad321491b91c133aaa3b461f, type: 3}
+      propertyPath: MaxDistance
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5680730668950514928, guid: f6c03668ad321491b91c133aaa3b461f, type: 3}
+      propertyPath: MinDistance
+      value: 0.25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6c03668ad321491b91c133aaa3b461f, type: 3}

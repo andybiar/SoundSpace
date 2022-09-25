@@ -39,6 +39,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8494639819675913834}
     m_Modifications:
+    - target: {fileID: 6841633136740486587, guid: f5c666a77c77c4278bb73e6d905ed6a8, type: 3}
+      propertyPath: MaxDistance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6841633136740486587, guid: f5c666a77c77c4278bb73e6d905ed6a8, type: 3}
+      propertyPath: MinDistance
+      value: 0.08
+      objectReference: {fileID: 0}
     - target: {fileID: 7758385160906372444, guid: f5c666a77c77c4278bb73e6d905ed6a8, type: 3}
       propertyPath: m_Name
       value: SoundSphere_B

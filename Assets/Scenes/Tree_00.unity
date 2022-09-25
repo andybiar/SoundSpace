@@ -250,10 +250,10 @@ RectTransform:
   m_Father: {fileID: 1387804840}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 400, y: -43.249756}
+  m_SizeDelta: {x: 800, y: 43.249756}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &244473054
 CanvasRenderer:
@@ -388,7 +388,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &435963987
 RectTransform:
   m_ObjectHideFlags: 0
@@ -587,10 +587,10 @@ RectTransform:
   m_Father: {fileID: 1654409530}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 200, y: -216.24873}
+  m_SizeDelta: {x: 200, y: 98.12437}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &754451295
 MonoBehaviour:
@@ -761,10 +761,10 @@ RectTransform:
   m_Father: {fileID: 1387804840}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 400, y: -21.624878}
+  m_SizeDelta: {x: 800, y: 43.249756}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1187600314
 GameObject:
@@ -1031,7 +1031,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _manageUsingUnityLifecycle: 1
-  _planePrefab: {fileID: 1092543363889104, guid: 98e455e2ba6ba413287f8cd497d4b08e, type: 3}
+  _planePrefab: {fileID: 0}
   _detectedPlaneTypes: 1
 --- !u!114 &1546051506
 MonoBehaviour:
@@ -1045,6 +1045,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f46745e9d11b4fa4beb2b15d0e365a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1546051512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 353730339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80198c6deee0a4c5c9096accbcac4119, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _manageUsingUnityLifecycle: 1
+  _camera: {fileID: 1546051498}
+  _keyFrameFrequency: 30
+  _interpolation: 2
+  _interpolationPreference: 0.9
+  _occlusionMode: 1
+  _textureFilterMode: 1
 --- !u!1 &1654409529
 GameObject:
   m_ObjectHideFlags: 0
@@ -1203,10 +1222,10 @@ RectTransform:
   m_Father: {fileID: 1654409530}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 200, y: -98.12437}
+  m_SizeDelta: {x: 200, y: 98.12437}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &1852094410
 MonoBehaviour:
