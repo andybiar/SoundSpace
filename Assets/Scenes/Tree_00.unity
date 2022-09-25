@@ -1297,7 +1297,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f46745e9d11b4fa4beb2b15d0e365a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1001 &127582007695928904
+--- !u!1001 &2004848188965214013
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -1351,10 +1351,6 @@ PrefabInstance:
     - target: {fileID: 5407196007125591790, guid: f6c03668ad321491b91c133aaa3b461f, type: 3}
       propertyPath: m_Name
       value: Harp
-      objectReference: {fileID: 0}
-    - target: {fileID: 5407196007125591790, guid: f6c03668ad321491b91c133aaa3b461f, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6c03668ad321491b91c133aaa3b461f, type: 3}
