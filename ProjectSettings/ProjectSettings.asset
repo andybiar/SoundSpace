@@ -535,6 +535,7 @@ PlayerSettings:
   mobileMTRendering:
     Android: 1
     iPhone: 1
+    iPhone: 0
     tvOS: 1
   m_BuildTargetGroupLightmapEncodingQuality:
   - m_BuildTarget: Android
