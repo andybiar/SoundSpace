@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 237564158069621109}
   - component: {fileID: 7300844052644002265}
   - component: {fileID: 6240351679150267959}
+  - component: {fileID: 3841440185062366919}
   m_Layer: 0
   m_Name: SoundSphere_A
   m_TagString: Untagged
@@ -63,7 +64,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7943715520b915b49a0d800a30bca4f3, type: 2}
+  - {fileID: 2100000, guid: 8559e9bdd65b6044789e3330775c4966, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -194,3 +195,15 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &3841440185062366919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4317510483242936991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ae05010aba245749ac2fdeea9a49df5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

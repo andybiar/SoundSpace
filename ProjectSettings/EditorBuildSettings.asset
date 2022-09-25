@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/ARDKExamples/ContextAwareness/Segmentation/SemanticSegmentation.unity
-    guid: b31f157add5014c85962f656eefdf04d
+    path: Assets/Scenes/Tree_00.unity
+    guid: 6e2c4367f2e884d508dfb9cc6cc79387
   m_configObjects: {}
